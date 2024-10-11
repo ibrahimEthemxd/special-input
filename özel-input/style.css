@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #ff9, #07f) ;
+}
+.container{
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    position: relative;
+    height: 10rem;
+}
+img{
+    width: 5rem;
+    color: #555;
+    cursor: pointer;
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    align-self: end;
+}
+img .img{
+    font-size: 1.5rem;
+    color: pink;
+}
+input{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #333;
+    position: relative;
+    font-size: 1.8rem;
+}
+label{
+    position: absolute;
+    top: 2.5rem;
+    left: 2rem;
+    transition: 0.3s;
+}
+input:focus{
+    border-bottom: 2px solid #07f;
+}
+input:focus ~ label{
+    top: 1rem;
+    left: 2rem;
+    color: #07f;
+}
